@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-learning Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>E-learning Website</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Courses</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="courses" class="section">
+        <div class="container">
+            <h2>Available Courses</h2>
+            <div class="course">
+                <img src="course1.jpg" alt="Course 1">
+                <h3>Course 1</h3>
+                <p>Description of Course 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <button class="btn btn-primary enroll" data-course="Course 1">Enroll</button>
+            </div>
+            <div class="course">
+                <img src="course2.jpg" alt="Course 2">
+                <h3>Course 2</h3>
+                <p>Description of Course 2. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <button class="btn btn-primary enroll" data-course="Course 2">Enroll</button>
+            </div>
+            <!-- Add more courses as needed -->
+        </div>
+    </section>
+
+    <section id="course-details" class="section hide">
+        <div class="container">
+            <button id="back-to-courses" class="btn btn-secondary">Back to Courses</button>
+            <div id="course-info">
+                <h2>Course Details</h2>
+                <h3 id="course-title"></h3>
+                <p id="course-description"></p>
+                <button id="start-course" class="btn btn-primary">Start Course</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 E-learning Website. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
